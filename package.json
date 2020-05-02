@@ -1,0 +1,20 @@
+{
+  "name": "react-carbonbadge",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "React component for https://www.websitecarbon.com/badge/",
+  "main": "carbonbadge.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivo Bathke",
+  "peerDependencies": {
+    "react": "^16"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "carbonbadge",
+    "websitecarbon"
+  ]
+}
