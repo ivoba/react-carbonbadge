@@ -3,11 +3,24 @@
   "version": "1.0.0",
   "license": "MIT",
   "description": "React component for https://www.websitecarbon.com/badge/",
-  "main": "carbonbadge.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "homepage": "https://github.com/ivoba/react-carbonbadge",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "author": "Ivo Bathke",
+  "scripts": {
+    "build": "babel --out-file ./index.js src"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-transform-spread": "^7.8.3",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "prop-types": "^15.7.2",
+    "react": "^16"
+  },
   "peerDependencies": {
     "react": "^16"
   },
