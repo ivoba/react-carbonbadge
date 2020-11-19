@@ -6,7 +6,8 @@
   "homepage": "https://github.com/ivoba/react-carbonbadge",
   "main": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "author": "Ivo Bathke",
   "scripts": {
