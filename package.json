@@ -1,6 +1,6 @@
 {
   "name": "react-carbonbadge",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "license": "MIT",
   "description": "React component for https://www.websitecarbon.com/badge/",
   "homepage": "https://github.com/ivoba/react-carbonbadge",
@@ -11,7 +11,9 @@
   ],
   "author": "Ivo Bathke",
   "scripts": {
-    "build": "babel --out-file ./index.js src"
+    "build": "babel ./src/Carbonbadge.jsx --out-file ./index.js",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -19,11 +21,27 @@
     "@babel/plugin-transform-spread": "^7.8.3",
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
-    "prop-types": "^15.7.2",
-    "react": "^16"
+    "@storybook/addon-actions": "^6.5.7",
+    "@storybook/addon-essentials": "^6.5.7",
+    "@storybook/addon-interactions": "^6.5.7",
+    "@storybook/addon-links": "^6.5.7",
+    "@storybook/builder-webpack5": "^6.5.7",
+    "@storybook/jest": "^0.0.10",
+    "@storybook/manager-webpack5": "^6.5.7",
+    "@storybook/node-logger": "^6.5.7",
+    "@storybook/preset-create-react-app": "^4.1.2",
+    "@storybook/react": "^6.5.7",
+    "@storybook/testing-library": "^0.0.11",
+    "babel-plugin-named-exports-order": "^0.0.2",
+    "msw": "^0.42.0",
+    "msw-storybook-addon": "^1.6.3",
+    "prop-types": "^15.8.1",
+    "webpack": "^5.73.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
   },
   "peerDependencies": {
-    "react": "^16"
+    "react": "^18"
   },
   "keywords": [
     "react",

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react"
+import PropTypes from 'prop-types';
 
-const Carbonbadge = props => {
+export const Carbonbadge = ({ darkMode }) => {
   useEffect(() => {
     const script = document.createElement("script")
 
@@ -15,8 +16,14 @@ const Carbonbadge = props => {
   }, [])
 
   return (
-    <div id="wcb" className={`wcb carbonbadge${props.darkMode ? ` wcb-d` : '' }`}></div>
+    <div id="wcb" className={`wcb carbonbadge${darkMode ? ` wcb-d` : '' }`}></div>
   )
 }
 
-export default Carbonbadge
+Carbonbadge.propTypes = {
+  darkMode: PropTypes.bool
+}
+
+Carbonbadge.defaultProps = {
+  darkMode: false
+}
