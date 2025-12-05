@@ -1,5 +1,7 @@
+import { fn } from '@storybook/test';
+
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
+  actions: { fn },
   controls: {
     matchers: {
       color: /(background|color)$/i,

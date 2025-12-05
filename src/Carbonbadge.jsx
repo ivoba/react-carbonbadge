@@ -3,15 +3,15 @@ import PropTypes from 'prop-types';
 
 export const Carbonbadge = ({ darkMode }) => {
   useEffect(() => {
-    const script = document.createElement("script")
+    const scriptSrc = "https://unpkg.com/website-carbon-badges@^1/b.min.js"
 
-    script.src = "https://unpkg.com/website-carbon-badges@^1/b.min.js"
-    script.defer = true
-
-    document.body.appendChild(script)
-
-    return () => {
-      document.body.removeChild(script)
+    // Prevent loading the external script multiple times (e.g. when Storybook mounts stories/Docs repeatedly)
+    const existingScript = document.querySelector(`script[src="${scriptSrc}"]`)
+    if (!existingScript) {
+      const script = document.createElement("script")
+      script.src = scriptSrc
+      script.defer = true
+      document.body.appendChild(script)
     }
   }, [])
 

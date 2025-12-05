@@ -1,9 +1,7 @@
-import React from 'react';
-
-import { Carbonbadge } from './Carbonbadge';
+import { Carbonbadge } from "./Carbonbadge";
 
 export default {
-  title: 'Carbonbadge',
+  title: "Carbonbadge",
   component: Carbonbadge,
   argTypes: {
     darkMode: { darkMode: false },
